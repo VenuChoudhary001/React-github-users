@@ -2,10 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
-
+import { PROVIDER } from "./context/search-context"; // Search Provider
+import { USER_PROVIDER } from "./context/user-context";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PROVIDER>
+      <USER_PROVIDER>
+        <App />
+      </USER_PROVIDER>
+    </PROVIDER>
   </React.StrictMode>,
   document.getElementById("root")
 );

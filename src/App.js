@@ -9,9 +9,7 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={THEME}>
-        <PROVIDER>
-          <Dashboard />
-        </PROVIDER>
+        <Dashboard />
       </ThemeProvider>
     </div>
   );
